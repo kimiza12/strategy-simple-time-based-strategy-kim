@@ -1,23 +1,13 @@
-#!/usr/bin/env python3
-"""
-Time-based strategy using CPZ AI SDK for order placement (paper by default).
-
-Requires environment variables:
-  - CPZ_AI_API_KEY
-  - CPZ_AI_SECRET_KEY
-  - CPZ_STRATEGY_ID
-Optional:
-  - CPZ_BROKER (default: "alpaca")
-  - CPZ_ENV (default: "paper")
-  - CPZ_ACCOUNT_ID (if you want to target a specific broker account)
-"""
 
 import os
 import sys
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from cpz.clients.sync import CPZClient
-
+# --- Set credentials ---
+os.environ["CPZ_AI_API_KEY"] = "cpz_key_6ee65f4ef5bf4d63a93a60c1"
+os.environ["CPZ_AI_SECRET_KEY"] = "cpz_secret_4e1k6i3b435j341d3a4tp2r5d4t632vkn163h3t45213v27w"
+os.environ["CPZ_STRATEGY_ID"] = "d5d8d00e-40c3-4e62-b053-f4f06ddd0402"
 SYMBOL = "KO"
 QTY = 1
 TZ_ET = ZoneInfo("US/Eastern")
