@@ -5,8 +5,8 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 from cpz.clients.sync import CPZClient
 # --- Set credentials ---
-os.environ["CPZ_AI_API_KEY"] = "cpz_key_6ee65f4ef5bf4d63a93a60c1"
-os.environ["CPZ_AI_SECRET_KEY"] = "cpz_secret_4e1k6i3b435j341d3a4tp2r5d4t632vkn163h3t45213v27w"
+os.environ["CPZ_AI_API_KEY"] = "cpz_key_306586b0e48f4955835e6229"
+os.environ["CPZ_AI_SECRET_KEY"] = "cpz_secret_55376a4b4p2n3n5s1a5n62yk2y35d676a1h223w5n1e1e5w0"
 os.environ["CPZ_STRATEGY_ID"] = "d5d8d00e-40c3-4e62-b053-f4f06ddd0402"
 SYMBOL = "KO"
 QTY = 1
